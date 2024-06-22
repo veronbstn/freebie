@@ -1,0 +1,205 @@
+@use 'variables' as *;
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-BoldItalic.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-BoldItalic.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-BoldItalic.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Thin.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Thin.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Thin.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-MediumItalic.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-MediumItalic.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-MediumItalic.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(#{$base-fonts-path} + 'Quicksand-Light.eot');
+    src: url(#{$base-fonts-path} + 'Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Quicksand-Light.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Quicksand-Light.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Quicksand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Bold.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Bold.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Bold.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(#{$base-fonts-path} + 'Quicksand-Medium.eot');
+    src: url(#{$base-fonts-path} + 'Quicksand-Medium.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Quicksand-Medium.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Quicksand-Medium.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Black.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Black.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Black.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Black.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(#{$base-fonts-path} + 'Quicksand-Bold.eot');
+    src: url(#{$base-fonts-path} + 'Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Quicksand-Bold.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Quicksand-Bold.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Regular.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Regular.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Regular.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-LightItalic.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-LightItalic.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-LightItalic.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-BlackItalic.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-BlackItalic.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-BlackItalic.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(#{$base-fonts-path} + 'Quicksand-Regular.eot');
+    src: url(#{$base-fonts-path} + 'Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Quicksand-Regular.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Quicksand-Regular.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Medium.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Medium.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Medium.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Italic.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Italic.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Italic.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(#{$base-fonts-path} + 'Quicksand-SemiBold.eot');
+    src: url(#{$base-fonts-path} + 'Quicksand-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Quicksand-SemiBold.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Quicksand-SemiBold.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-Light.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-Light.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-Light.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(#{$base-fonts-path} + 'Roboto-ThinItalic.eot');
+    src: url(#{$base-fonts-path} + 'Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url(#{$base-fonts-path} + 'Roboto-ThinItalic.woff2') format('woff2'),
+    url(#{$base-fonts-path} + 'Roboto-ThinItalic.woff') format('woff'),
+    url(#{$base-fonts-path} + 'Roboto-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}

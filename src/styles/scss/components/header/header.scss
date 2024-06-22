@@ -1,0 +1,58 @@
+@use '../../common/extends' as *;
+@use '../../common/variables' as *;
+
+.header {
+  $logo-dimensions: 24px;
+  padding: map-get($spacing, 'spacing-4');
+
+  &__content {
+    @extend %flex-between;
+    align-items: center;
+  }
+
+  &__start {
+    @extend %flex-between;
+    display: flex;
+    gap: map-get($spacing, 'spacing-11');
+    align-items: center;
+  }
+
+  &__logo a {
+    width: $logo-dimensions;
+    height: $logo-dimensions;
+    background-color: map-get($colors, 'accent-color');
+    border-radius: 50%;
+    display: flex;
+  }
+
+  &__end {
+    @extend %flex-between;
+    gap: map-get($spacing, 'spacing-8');
+    align-items: center;
+  }
+
+  &__main-menu-list {
+    @extend %list-unstyled;
+    display: flex;
+    gap: map-get($spacing, 'spacing-8');
+
+    a {
+      @extend %base-link;
+      font-size: map-get($font-sizes, 'xs');
+    }
+  }
+
+  &__socials ul {
+    @extend %list-unstyled;
+    display: flex;
+    gap: map-get($spacing, 'spacing-5');
+    color: map-get($colors, 'main-font-color');
+
+    a {
+      @extend %base-link;
+      color: map-get($colors, 'main-font-color');
+      font-size: map-get($font-sizes, 'md');
+    }
+  }
+
+}

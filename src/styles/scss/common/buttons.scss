@@ -1,0 +1,86 @@
+@use 'variables' as *;
+@use 'sass:map';
+@use 'mixins' as mixins;
+
+.btn {
+  font-family: $main-font-family;
+  padding: map-get($spacing, 'spacing-3') map-get($spacing, 'spacing-4');
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: map-get($colors, 'btn-alternative-color');
+  font-weight: map-get($font-weights, 'bold');
+  font-size: map-get($font-sizes, 'sm');
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 4px;
+
+  &:hover {
+    box-shadow: 0 5px 15px 0 map-get($colors, 'btn-alternative-shadow-color');
+  }
+
+  &.btn-secondary {
+    @include mixins.create-btn-styles(
+                    map-get($colors, 'light-blue'),
+                    map-get($colors, 'btn-primary-color'),
+                    map-get($colors, 'light-blue'),
+                    map-get($colors, 'light-blue'),
+                    map-get($font-weights, 'bold'),
+                    map-get($font-sizes, 'sm')
+    );
+  }
+
+  &.btn-tertiary {
+    @include mixins.create-btn-styles(
+                    map-get($colors, 'btn-tertiary-bg-color'),
+                    map-get($colors, 'btn-tertiary-color'),
+                    map-get($colors, 'btn-tertiary-bg-color'),
+                    map-get($colors, 'btn-tertiary-bg-color'),
+                    map-get($font-weights, 'bold'),
+                    map-get($font-sizes, 'sm')
+    );
+  }
+
+  &.btn-alternative {
+    @include mixins.create-btn-styles(
+                    transparent,
+                    map-get($colors, 'btn-alternative-color'),
+                    map-get($colors, 'btn-alternative-border-color'),
+                    map-get($colors, 'btn-alternative-shadow-color'),
+                    map-get($font-weights, 'bold'),
+                    map-get($font-sizes, 'sm')
+    );
+  }
+
+  &.btn-primary {
+    @include mixins.create-btn-styles(
+                    map-get($colors, 'btn-primary-color'),
+                    map-get($colors, 'white-color'),
+                    map-get($colors, 'btn-primary-color'),
+                    map-get($colors, 'shadow-blue-color'),
+                    map-get($font-weights, 'bold'),
+                    map-get($font-sizes, 'sm')
+    );
+
+    &.btn--rounded {
+      border-radius: 50%;
+      background-color: map-get($colors, 'white-color');
+      border: map-get($colors, 'white-color');
+      color: map-get($colors, 'accent-color');
+    }
+
+  }
+
+  &.btn-lg {
+    @include mixins.create-btn-sizes(map-get($spacing, 'spacing-3') map-get($spacing, 'spacing-5'));
+  }
+
+  &.btn-md {
+    @include mixins.create-btn-sizes(map-get($spacing, 'spacing-2') map-get($spacing, 'spacing-3'));
+  }
+
+  &.btn-sm {
+    @include mixins.create-btn-sizes(map-get($spacing, 'spacing-1') map-get($spacing, 'spacing-2'));
+  }
+}

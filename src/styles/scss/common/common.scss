@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+body {
+  font-family: $secondary-font-family;
+  font-size: map-get($font-sizes, 'md');
+  color: map-get($colors, 'main-font-color');
+}
+
+.container, .container--md, .container--sm, .container--lg, .container--xs {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: map-get($content-widths, 'xl');
+  margin: 0 auto;
+}
+
+.container--lg {
+  max-width: map-get($content-widths, 'lg');
+}
+
+.container--md {
+  max-width: map-get($content-widths, 'md');
+}
+
+.container--sm {
+  max-width: map-get($content-widths, 'sm');
+}
+
+.container--xs {
+  max-width: map-get($content-widths, 'xs');
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.bordered {
+  border-bottom: 1px solid map-get($colors, 'bordered-color');
+}
+
+.m-0 {
+  margin: 0;
+}

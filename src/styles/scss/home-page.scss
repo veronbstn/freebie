@@ -1,0 +1,11 @@
+@use 'common/variables' as *;
+@use 'sass:map';
+@use 'common/mixins';
+@use 'common/buttons';
+
+@import './components/header';
+@import './common/index';
+@import './components/banner';
+@import './components/partners';
+@import './components/planning';
+@import './components/features';

@@ -1,0 +1,106 @@
+$main-font-family: 'Quicksand', 'Roboto', sans-serif;
+$secondary-font-family: 'Roboto', 'Quicksand', sans-serif;
+$base-fonts-path: './../../fonts/';
+$base-assets-path: './../../assets/';
+
+$font-sizes: (
+        "xxl": 48px,
+        "xl": 36px,
+        "l": 30px,
+        "lg": 18px,
+        "md": 16px,
+        "sm": 14px,
+        "xs": 12px,
+);
+
+$colors: (
+        "accent-color": #5E81FE,
+        "body-color": #8D96BD,
+        "shadow-blue-color": #BCC7FF,
+        "light-blue": #D2E1FF,
+        "divider-blue": #DAE4FE,
+        "titles-color": #4074F8,
+        "dark-blue": #6888FF,
+        "headers-color": #3D4F9F,
+        "main-font-color": #697CA6,
+        "btn-primary-color": #3A79FF,
+        "btn-tertiary-bg-color": #FFD7D7,
+        "btn-tertiary-color": #D43F3F,
+        "btn-alternative-shadow-color": #DFE3F1,
+        "btn-alternative-color": #ADB4D2,
+        "btn-alternative-border-color": #D1D1E4,
+        "btn-icon-color": #FFFFFF,
+        "white-color": #FFFFFF,
+        "btn-icon-bg-color": #4C85FF,
+        "btn-base-color": #A6B6DA,
+        "black": #1F1F1F,
+        "bordered-color": #D8E3FE,
+        "banner-bg": #f5f6ff,
+        "logos-hover-color": #5982E7,
+        "app-right-bg": #E0E9FF,
+        "inputs-bg": #EFEFF7,
+        "inputs-color": #7A85AD,
+);
+
+$content-widths: (
+        'xl': 1200px,
+        'lg': 992px,
+        'md': 767px,
+        'sm': 577px,
+        'xs': 413px,
+);
+
+$containers: (
+        'container': 1200px,
+        'container-lg': 840px,
+        'container-md': 767px,
+        'sm': 577px,
+);
+
+$spacing: (
+        "spacing-0": 0px,
+        "spacing-1": 8px,
+        "spacing-2": 10px,
+        "spacing-3": 12px,
+        "spacing-4": 16px,
+        "spacing-5": 24px,
+        "spacing-6": 32px,
+        "spacing-7": 40px,
+        "spacing-8": 48px,
+        "spacing-9": 56px,
+        "spacing-10": 64px,
+        "spacing-11": 72px,
+        "spacing-12": 80px,
+        "spacing-13": 88px,
+        "spacing-14": 96px,
+        "spacing-15": 104px,
+        "spacing-16": 112px,
+        "spacing-17": 120px,
+        "spacing-18": 128px,
+        "spacing-19": 136px,
+        "spacing-20": 144px,
+        'spacing-21': 112px,
+        'spacing-22': 120px,
+        'spacing-23': 128px,
+        'spacing-24': 136px,
+        'spacing-25': 144px,
+        'spacing-26': 152px,
+        'spacing-27': 160px,
+        'spacing-28': 168px,
+        'spacing-29': 176px,
+        'spacing-30': 184px,
+        'spacing-31': 192px,
+        'spacing-32': 200px
+);
+
+$font-weights: (
+        "thin": 100,
+        "extra-light": 200,
+        "light": 300,
+        "normal": 400,
+        "medium": 500,
+        "semi-bold": 600,
+        "bold": 700,
+        "extra-bold": 800,
+        "black": 900,
+);

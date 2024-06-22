@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%base-link {
+  color: map-get($colors, 'main-font-color');
+  font-family: $main-font-family;
+  font-weight: map-get($font-weights, 'semi-bold');
+  letter-spacing: 1px;
+  transition: 0.3s;
+
+  &:hover {
+    color: map-get($colors, 'accent-color');
+  }
+
+}

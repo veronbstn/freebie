@@ -1,0 +1,86 @@
+@use '../../common/extends' as *;
+@use '../../common/variables' as *;
+
+.banner {
+  $banner-height: 570px;
+  background-color: map-get($colors, 'banner-bg');
+  height: $banner-height;
+  min-height: $banner-height;
+  padding-top: map-get($spacing, 'spacing-14');
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &__chart, &__clouds {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 map-get($spacing, 'spacing-4');
+  }
+
+  &__description {
+    margin-bottom: map-get($spacing, 'spacing-4');
+
+    h6 {
+      color: map-get($colors, 'headers-color');
+      font-size: map-get($font-sizes, 'xs');
+      margin-bottom: map-get($spacing, 'spacing-2');
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-family: $main-font-family;
+      font-weight: map-get($font-weights, 'light');
+      font-size: map-get($font-sizes, 'xxl');
+      margin-bottom: map-get($spacing, 'spacing-3');
+      color: map-get($colors, 'headers-color');
+
+      b {
+        font-weight: map-get($font-weights, 'bold');
+      }
+    }
+
+    p {
+      max-width: 500px;
+      margin: 0 auto;
+      color: map-get($colors, 'body-color');
+    }
+  }
+
+  &__video {
+    text-align: center;
+    margin-top: map-get($spacing, 'spacing-4');
+
+    .btn {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+
+}

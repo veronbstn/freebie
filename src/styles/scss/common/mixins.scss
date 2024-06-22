@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@mixin create-btn-styles($bg, $font-color, $border-color, $hover-shadow, $font-weight, $font-size, $box-shadow-dim: 0 5px 15px) {
+  background-color: $bg;
+  color: $font-color;
+  border-color: $border-color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+
+  &:hover {
+    box-shadow: $box-shadow-dim $hover-shadow;
+  }
+}
+
+@mixin create-btn-sizes($dimensions) {
+  padding: $dimensions;
+}
